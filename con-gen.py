@@ -4,22 +4,22 @@ import random
 
 def main():
     who = [
-        "The government",
-        "Bill Gates and his cohort",
-        "Immigrants",
-        "The Gays",
-        "Doctors",
-        "People",
-        "The Japanese",
-        "Corporations",
-        "Atheists",
-        "NASA",
-        "Liberals",
-        "Facebook",
-        "Lizard people",
-        "Morning news networks",
-        "The Jews",
-        "The Clintons"
+        ("The government", False),
+        ("Bill Gates and his cohort", True),
+        ("Immigrants", True),
+        ("The Gays", True),
+        ("Doctors", True),
+        ("People", True),
+        ("The Japanese", True),
+        ("Corporations", True),
+        ("Atheists", True),
+        ("NASA", False),
+        ("Liberals", True),
+        ("Facebook", False),
+        ("Lizard people", True),
+        ("Morning news networks", True),
+        ("The Jews", True),
+        ("The Clintons", True)
     ]
 
     what = [
@@ -62,17 +62,11 @@ def main():
     what_num = random.randint(0,(len(what)- 1))
     why_num = random.randint(0,(len(why) - 1))
 
-    if (who[who_num].endswith("s")):
-        print("{} are using {} to {}!".format(who[who_num], what[what_num],
-                                             why[why_num]))
-    elif (who[who_num].endswith("e")):
-        print("{} are using {} to {}!".format(who[who_num], what[what_num],
-                                             why[why_num]))
-    elif (who[who_num][:4] == "Bill"):
-        print("{} are using {} to {}!".format(who[who_num], what[what_num],
+    if (who[who_num][1]):
+        print("{} are using {} to {}!".format(who[who_num][0], what[what_num],
                                              why[why_num]))
     else:
-        print("{} is using {} to {}!".format(who[who_num], what[what_num],
+        print("{} is using {} to {}!".format(who[who_num][0], what[what_num],
                                              why[why_num]))
 
 
