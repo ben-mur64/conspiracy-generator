@@ -3,64 +3,64 @@
 import random
 
 def main():
-    who = {
-        1 : "The government",
-        2 : "Bill Gates and his cohort",
-        3 : "Immigrants",
-        4 : "The Gays",
-        5 : "Doctors",
-        6 : "People",
-        7 : "The Japanese",
-        8 : "Corporations",
-        9 : "Atheists",
-        10 : "NASA",
-        11 : "Liberals",
-        12 : "Facebook",
-        13 : "Lizard people",
-        14 : "Morning news networks",
-        15 : "The Jews",
-        16 : "The Clintons"
-    }
+    who = [
+        "The government",
+        "Bill Gates and his cohort",
+        "Immigrants",
+        "The Gays",
+        "Doctors",
+        "People",
+        "The Japanese",
+        "Corporations",
+        "Atheists",
+        "NASA",
+        "Liberals",
+        "Facebook",
+        "Lizard people",
+        "Morning news networks",
+        "The Jews",
+        "The Clintons"
+    ]
 
-    what = {
-        1 : "the TV",
-        2 : "abortions",
-        3 : "nanotechnology",
-        4 : "Satan",
-        5 : "video games",
-        6 : "feminism",
-        7 : "pesticides",
-        8 : "the sun's rays",
-        9 : "dihydrogen monoxyide",
-        10 : "lies and propaganda",
-        11 : "GMOs",
-        12 : "vaccinations",
-        13 : "holographic simulations",
-        14 : "deep drilling",
-        15 : "high-fructose corn syrup",
-        16 : "realistic clones"
-    }
+    what = [
+        "the TV",
+        "abortions",
+        "nanotechnology",
+        "Satan",
+        "video games",
+        "feminism",
+        "pesticides",
+        "the sun's rays",
+        "dihydrogen monoxyide",
+        "lies and propaganda",
+        "GMOs",
+        "vaccinations",
+        "holographic simulations",
+        "deep drilling",
+        "high-fructose corn syrup",
+        "realistic clones"
+    ]
 
-    why = {
-        1 : "cause cancer",
-        2 : "give children autism",
-        3 : "erode your brain",
-        4 : "turn people gay",
-        5 : "make you fat",
-        6 : "amass enormous wealth",
-        7 : "cause global warming",
-        8 : "destroy America",
-        9 : "turn you into a sheep",
-        10 : "kill bees at an alarming rate",
-        11 : "take over the world",
-        12 : "hide the aliens",
-        13 : "communicate with dolphins",
-        14 : "bring back Michael Jackson"
-    }
+    why = [
+        "cause cancer",
+        "give children autism",
+        "erode your brain",
+        "turn people gay",
+        "make you fat",
+        "amass enormous wealth",
+        "cause global warming",
+        "destroy America",
+        "turn you into a sheep",
+        "kill bees at an alarming rate",
+        "take over the world",
+        "hide the aliens",
+        "communicate with dolphins",
+        "bring back Michael Jackson"
+    ]
     
-    who_num = random.randint(1,len(who))
-    what_num = random.randint(1,len(what))
-    why_num = random.randint(1,len(why))
+    who_num = random.randint(0,(len(who) - 1))
+    what_num = random.randint(0,(len(what)- 1))
+    why_num = random.randint(0,(len(why) - 1))
 
     if (who[who_num].endswith("s")):
         print("{} are using {} to {}!".format(who[who_num], what[what_num],
