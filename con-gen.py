@@ -17,7 +17,7 @@ def main():
         11 : "Liberals",
         12 : "Facebook",
         13 : "Lizard people",
-        14 : "Morning News Networks",
+        14 : "Morning news networks",
         15 : "The Jews",
         16 : "The Clintons"
     }
