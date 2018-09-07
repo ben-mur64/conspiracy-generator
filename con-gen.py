@@ -9,7 +9,7 @@ def main():
         ("Immigrants", True),
         ("The Gays", True),
         ("Doctors", True),
-        ("People", True),
+        ("Bill Bellichek and the Illuminati", True),
         ("The Japanese", True),
         ("Corporations", True),
         ("Atheists", True),
@@ -38,7 +38,8 @@ def main():
         "holographic simulations",
         "deep drilling",
         "high-fructose corn syrup",
-        "realistic clones"
+        "realistic clones",
+        "bitcoin"
     ]
 
     why = [
@@ -55,7 +56,8 @@ def main():
         "take over the world",
         "hide the aliens",
         "communicate with dolphins",
-        "bring back Michael Jackson"
+        "bring back Michael Jackson",
+        "abolish the patriarchy"
     ]
     
     who_num = random.randint(0,(len(who) - 1))
