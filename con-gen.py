@@ -19,7 +19,8 @@ def main():
         ("Lizard people", True),
         ("Morning news networks", True),
         ("The Jews", True),
-        ("The Clintons", True)
+        ("The Clintons", True),
+        ("The Left", False)
     ]
 
     what = [
@@ -56,8 +57,7 @@ def main():
         "take over the world",
         "hide the aliens",
         "communicate with dolphins",
-        "bring back Michael Jackson",
-        "abolish the patriarchy"
+        "bring back Michael Jackson"
     ]
     
     who_num = random.randint(0,(len(who) - 1))
